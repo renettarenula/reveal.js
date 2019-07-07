@@ -8,7 +8,7 @@
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/houdini.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
@@ -25,8 +25,275 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h1 class="screamer">🐰🎩</h1>
+					<p class="sub-screamer">Pushing the boundaries of CSS with Houdini ✨ </p>
+				</section>
+				<section>
+					<h1 class="screamer strong">CSS Houdini</h1>
+					<p class="sub-screamer">Collection of <span class="emphasis">browser APIs</span> that allows you to gain access to the <span class="emphasis">browsers CSS engine</span>.</p>
+					<div class="grid-elements">
+						<div>Paint</div>
+						<div>Typed OM</div>
+						<div>Properties & values</div>
+						<div>Animation</div>
+						<div>Layout</div>
+						<div>Parser</div>
+						<div>Font Metrics</div>
+						<div>✨ ✨ ✨</div>
+					</div>
+				</section>
+				<section>
+					<h1 class="screamer strong">But why...?</h1>
+				</section>
+				<section data-state="the-rant">
+					<h1 class="screamer strong">Caution! Rant time 😤</h1>
+				</section>
+				<section data-state="the-annoy">
+					<img src="blog-post.png" class="responsive-img" />
+				</section>
+				<section data-state="the-annoy">
+					<img src="comment.png" class="responsive-img" />
+				</section>
+				<section data-state="the-annoy">
+					<div class="sherlock-wrapper">
+						<img src="arrow.png" class="sherlock-arrow" width="200px;" />
+						<span class="sherlock-text">Sherlock</span>
+						<div class="side">
+							<div class="screamer-extra v-center strong">No 💩</div>
+							<div><img src="sherlock.png" width="170px;" /></div>
+						</div>
+					</div>
+				</section>
+				<section data-state="the-rant">
+					<h1 class="screamer">Why pure CSS when I have SVG/Image/etc?</h1>
+				</section>
+				<section data-state="the-rant">
+					<h1 class="screamer">Why CSS variables when I have SASS variables?</h1>
+				</section>
+				<section data-state="the-rant">
+					<h1 class="screamer">Why CSS Grid when browser support sucks?</h1>
+				</section>
+				<section>
+					<h1 class="screamer">Because it is all about...</h1>
+					<ul class="sub-screamer">
+						<li class="fragment" data-fragment-index="0">Pushing boundaries</li>
+						<li class="fragment" data-fragment-index="1">Exploration</li>
+						<li class="fragment" data-fragment-index="2">Discovering new workflows</li>
+						<li class="fragment" data-fragment-index="3">So much more... but that's for you to discover...</li>
+					</ul>
+				</section>
+				<section>
+					<h1 class="screamer">Not just about the APIs...</h1>
+				</section>
+				<section>
+					<h1 class="screamer strong">How things are done pre and post Houdini</h1>
+					<p class="sub-screamer light">Not just about the APIs…</p>
+				</section>
+				<section>
+					<h1 class="screamer strong">🐰🎩</h1>
+					<h2 class="screamer strong">#1 Properties & Values</h2>
+				</section>
+				<section>
+					<h1 class="screamer strong">CSS Variables are cool...</h1>
+				</section>
+				<section data-state="the-demo">
+					<h1 class="screamer">It's dynamic!</h1>
+					<pre><code class="liveCoding css" data-livecoding-id="no-id" contenteditable>body {}
+</code></pre>
+				<div id="no-id">
+					<p class="screamer" style="color: #9e4fdb;">Now you see me~</p>
+				</div>
+				</section>
+				<section>
+					<h1 class="screamer strong">But it has limitations</h1>
+				</section>
+				<section data-state="the-demo">
+					<pre><code class="liveCoding css" data-livecoding-id="gradient-test" contenteditable>.swatch-houdini {
+  --start: tomato;
+  --end: deeppink;
+  width: 860px;
+  height: 200px;
+  background-image: linear-gradient(
+    to bottom, var(--start), var(--end)
+  );
+
+  transition-property: --start, --end;
+  transition-duration: 1s;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+</code></pre>
+				<div id="gradient-test">
+					<div class="wrapper">
+            <div class="swatch-houdini"></div>
+          </div>
+				</div>
+				</section>
+				<section>
+					<h1 class="screamer strong">No semantic/meaning</h1>
+				</section>
+				<section>
+					<h1 class="screamer strong">Animating gradients right now</h1>
+					<p class="sub-screamer light">Pre-houdini Era</p>
+				</section>
+				<section data-state="the-demo">
+					<pre><code class="liveCoding css" data-livecoding-id="gradient-bg" contenteditable>.swatch-pos {
+  background: linear-gradient(
+    180deg,
+    tomato,
+    deeppink 51%,
+    blue
+  ) 0 var(--pos-y, 0) / 100% 200%;
+  height: 200px;
+  width: 860px;
+  transition: background-position 1s;
+}
+
+.swatch-pos:hover {
+  --pos-y: 100%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+</code></pre>
+				<div id="gradient-bg">
+					<div class="wrapper">
+            <div class="swatch-pos"></div>
+          </div>
+				</div>
+				</section>
+				<section data-state="the-demo">
+					<pre><code class="liveCoding css" data-livecoding-id="gradient-opacity" contenteditable>.swatch-opacity {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  background-image: linear-gradient(
+    to bottom,
+    tomato,
+    deeppink
+  );
+  z-index: 1;
+}
+
+.swatch-opacity::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(
+    to bottom,
+    deeppink,
+    blue
+  );
+  z-index: -1;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+
+.swatch-opacity:hover::before {
+  opacity: 1;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swatch-opacity-twin {
+	width: 300px;
+  height: 200px;
+  position: absolute;
+  background-image: linear-gradient(
+    to bottom,
+    deeppink,
+    blue
+  );
+
+	margin-right: 10px;
+	left: 0;
+  z-index: 1;
+	transition: left 1s ease-in-out;
+}
+
+.side.clicked .swatch-opacity-twin {
+	left: 330px;
+}
+
+</code></pre>
+				<div id="gradient-opacity">
+					<div class="wrapper">
+						<div class="side" id="demo-item">
+							<div class="swatch-opacity-twin"></div>
+						 	<div class="swatch-opacity"></div>
+						</div>
+				 	</div>
+					<i class="fas fa-play-circle play-btn" id="play-demo-1"></i>
+					<script>
+						let btn = document.getElementById('play-demo-1');
+						btn.addEventListener('click', () => {
+							document.getElementById('demo-item').classList.add('clicked');
+						})
+					</script>
+				</div>
+				</section>
+				<section>
+					<h1 class="screamer strong">Animating gradients with Houdini</h1>
+					<p class="sub-screamer">🐰🎩 Properties & Values</p>
+				</section>
+				<section>
+					<pre><code class="hljs">CSS.registerProperty({
+ name: '--start',
+ syntax: '&lt;color&gt;',
+ inherits: true,
+ initialValue: 'purple'
+})
+</code></pre>
+				<h1 class="screamer strong fragment" data-fragment-index="1">Strongly typed CSS 💪</h1>
+				</section>
+				<section>
+					<div class="livecode stretch no-console">
+	<pre><code class="javascript"></code></pre>
+	<pre><code class="html"></code></pre>
+	<pre><code class="css">body {
+	--start: tomato;
+	--end: deeppink;
+	width: 860px;
+	height: 200px;
+	background-image: linear-gradient(
+	to bottom, var(--start), var(--end)
+	);
+
+	transition-property: --start, --end;
+	transition-duration: 1s;
+}
+
+body:hover {
+	--start: deeppink;
+	--end: blue;
+}
+</code></pre>
+</div>
+				</section>
+				<section>
+					<h1 class="screamer strong">Simpler & Maintainable CSS with 🐰🎩</h1>
+				</section>
+				<section>
+					<h1 class="screamer strong">🐰🎩</h1>
+					<h2 class="screamer strong">#2 Typed OM</h2>
+				</section>
 			</div>
 		</div>
 
@@ -41,9 +308,12 @@
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true }
+					{ src: 'plugin/livecode/livecode.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true },
+					{ src: 'plugin/live-coding/live-coding.js', async: true, condition: function() { return !!document.body.classList; }}
 				]
 			});
 		</script>
+		<script src="https://kit.fontawesome.com/79f8ff02e3.js"></script>
 	</body>
 </html>
