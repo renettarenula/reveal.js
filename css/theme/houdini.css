@@ -5,7 +5,7 @@ body {
   --slide-text-color: #fff;
   background: var(--houdini-slides);
   font-family: sans-serif !important;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 .slides h1 {
@@ -19,6 +19,7 @@ body {
 
 .screamer {
   font-size: var(--screamer-font);
+  line-height: 1.2;
 }
 
 .sub-screamer {
