@@ -82,16 +82,16 @@ html.the-annoy body {
 
 .sherlock-arrow {
   position: absolute;
-  top: -12rem;
-  margin-left: 4rem;
+  top: -160px;
+  margin-left: 40px;
 }
 
 .sherlock-text {
   position: absolute;
   font-family: 'Zapfino';
   font-size: 3rem;
-  top: -12rem;
-  left: 19rem;
+  top: -160px;
+  left: 250px;
 }
 
 ul {
@@ -172,6 +172,6 @@ ul {
 
 .play-btn {
   position: absolute;
-  top: 29rem;
-  left: 63rem;
+  top: 375px;
+  left: 825px;
 }

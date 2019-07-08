@@ -294,6 +294,97 @@ body:hover {
 					<h1 class="screamer strong">🐰🎩</h1>
 					<h2 class="screamer strong">#2 Typed OM</h2>
 				</section>
+				<section>
+					<h1 class="screamer strong">CSS values as typed JS objects instead of strings</h1>
+				</section>
+				<section>
+					<h1 class="sub-screamer">getComputedStyle</h1>
+					<pre><code class="hljs">getComputedStyle(element).width // 200px (string)
+getComputedStyle(element).opacity // 0.5 (string)
+</code></pre>
+				</section>
+				<section>
+					<h1 class="sub-screamer">computedStyleMap</h1>
+					<pre><code class="hljs">element.computedStyleMap().get('width')
+// getter will return:
+// CSSUnitValue {
+//   value: 50,
+//   unit: 'percent',
+// }
+</code></pre>
+<h1 class="sub-screamer">attributeStyleMap</h1>
+					<pre><code class="hljs">element.attributeStyleMap().set('width', '200px')
+element.attributeStyleMap().get('width')
+// getter will return:
+// CSSUnitValue {
+//   value: 200,
+//   unit: 'px',
+// }
+</code></pre>
+				</section>
+				<section>
+					<div class="livecode stretch">
+					<pre><code class="javascript">let square = document.getElementById('square')
+let style = getComputedStyle(square)
+// console.log(typeof square.computedStyleMap().get('width'))
+// console.log(typeof square.computedStyleMap().get('width').value)
+// console.log(typeof square.attributeStyleMap().get('width').value)
+					</code></pre>
+					<pre><code class="html">&lt;div id=&quot;square&quot;&gt;&lt;/div&gt;</code></pre>
+	<pre><code class="css">#square {
+	width: 200px;
+	height: 200px;
+	background: deeppink;
+}
+</code></pre>
+				</section>
+				<section>
+					<h1 class="screamer strong">Performance benchmarking time!</h1>
+					<h2 class="screamer">⚡️⚡️⚡️</h2>
+				</section>
+				<section>
+					<div class="livecode stretch">
+					<pre><code class="javascript">let element = document.getElementById('element')
+for (var i = 0; i < 1000; i++) {
+  let squares = document.createElement('div')
+  squares.classList.add('square')
+  element.appendChild(squares)
+}
+
+let then = performance.now()
+let s = document.getElementsByClassName('square')
+for (var foo = 0; foo < s.length; foo++) {
+  // change width of elements here
+}
+
+function withoutHoudini(elem) {
+ let typeConversion = parseInt(getComputedStyle(elem).width)
+ elem.style.width = typeConversion + 200
+}
+
+function withHoudini(elem) {
+ let value = elem.computedStyleMap().get('width').value
+ elem.style.width = value + 200
+}
+
+let now = performance.now()
+
+//console.log(`${now - then}ms`)
+					</code></pre>
+					<pre><code class="html">&lt;div id=&quot;element&quot;&gt;&lt;/div&gt;</code></pre>
+	<pre><code class="css">
+		.square {
+	width: 200px;
+	height: 200px;
+	background: deeppink;
+	margin-bottom: 20px
+}
+</code></pre>
+				</section>
+				<section>
+<img src="https://media0.giphy.com/media/EdRgVzb2X3iJW/giphy.gif?cid=790b76115d2376b64258764249f70900&amp;rid=giphy.gif" />
+<h1 class="screamer strong">OMG!!!111~~~</h1>
+				</section>
 			</div>
 		</div>
 
