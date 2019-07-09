@@ -175,3 +175,11 @@ ul {
   top: 375px;
   left: 825px;
 }
+
+html.the-wide-demo div.slides {
+  width: 1100px !important;
+}
+
+html.the-wide-demo iframe.stretch {
+  width: 1100px !important;
+}

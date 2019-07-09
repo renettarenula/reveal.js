@@ -322,7 +322,7 @@ element.attributeStyleMap().get('width')
 // }
 </code></pre>
 				</section>
-				<section>
+				<section data-state="the-wide-demo">
 					<div class="livecode stretch">
 					<pre><code class="javascript">let square = document.getElementById('square')
 let style = getComputedStyle(square)
@@ -342,16 +342,9 @@ let style = getComputedStyle(square)
 					<h1 class="screamer strong">Performance benchmarking time!</h1>
 					<h2 class="screamer">⚡️⚡️⚡️</h2>
 				</section>
-				<section>
+				<section data-state="the-wide-demo">
 					<div class="livecode stretch">
-					<pre><code class="javascript" data-trim data-line-numbers="4,8-11">let element = document.getElementById('element')
-for (var i = 0; i < 1000; i++) {
-  let squares = document.createElement('div')
-  squares.classList.add('square')
-  element.appendChild(squares)
-}
-
-let then = performance.now()
+					<pre><code class="javascript">let then = performance.now()
 let s = document.getElementsByClassName('square')
 for (var foo = 0; foo < s.length; foo++) {
   // change width of elements here
@@ -371,15 +364,32 @@ let now = performance.now()
 
 //console.log(`${now - then}ms`)
 					</code></pre>
-					<pre><code class="html">&lt;div id=&quot;element&quot;&gt;&lt;/div&gt;</code></pre>
-	<pre><code class="css">
-		.square {
-	width: 200px;
-	height: 200px;
-	background: deeppink;
-	margin-bottom: 20px
+					<pre><code class="html">&lt;div id=&quot;element&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+  let element = document.getElementById('element')
+  for (var i = 0; i &lt; 1000; i++) {
+	let squares = document.createElement('div')
+	squares.classList.add('square')
+	element.appendChild(squares)
+  }
+&lt;/script&gt;
+</code></pre>
+	<pre><code class="css">#element {
+ display: flex;
+ flex-flow: row wrap;
+}
+.square {
+ width: 100px;
+ height: 100px;
+ background: deeppink;
+ margin-bottom: 20px;
+ margin-right: 10px;
 }
 </code></pre>
+				</section>
+				<section>
+					<h1 class="screamer strong">🐰🎩❤️⚡️</h1>
+					<p class="screamer strong">Better performance with Houdini</p>
 				</section>
 			</div>
 		</div>
