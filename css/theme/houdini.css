@@ -58,6 +58,10 @@ html.the-annoy body {
   --slide-text-color: #000;
 }
 
+html.conic-gradient body {
+  background: conic-gradient(red, orange, yellow, green, blue);
+}
+
 .responsive-img {
   max-width: 100%;
 }

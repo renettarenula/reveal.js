@@ -27,20 +27,223 @@
 			<div class="slides">
 				<section>
 					<h1 class="screamer">🐰🎩</h1>
-					<p class="sub-screamer">Pushing the boundaries of CSS with Houdini ✨ </p>
+					<p class="sub-screamer">CSS Houdini: The Magic of Properties, Values, & the Paint API ✨ </p>
+				</section>
+				<section>
+					<?xml version="1.0" encoding="UTF-8"?>
+					<svg width="659px" height="231px" viewBox="0 0 659 231" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+					    <title>Group</title>
+					    <desc>Created with Sketch.</desc>
+					    <defs></defs>
+					    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+					        <g id="Group">
+					            <path d="M301.5,72.5 L336.5,72.5" id="Line-3" stroke="#FFFFFF" stroke-linecap="square"></path>
+					            <rect id="Rectangle" fill="#FFFFFF" x="358" y="76" width="131" height="61"></rect>
+					            <text id="CSSOM" font-family="Lato-Regular, Lato" font-size="20" font-weight="normal" fill="#000000">
+					                <tspan x="391.37" y="112">CSSOM</tspan>
+					            </text>
+					            <rect id="Rectangle" fill="#FFFFFF" x="358" y="0" width="131" height="61"></rect>
+					            <rect id="Rectangle" fill="#FFFFFF" x="528" y="40" width="131" height="61"></rect>
+					            <text id="Render" font-family="Lato-Regular, Lato" font-size="20" font-weight="normal" fill="#000000">
+					                <tspan x="561.9" y="78">Render</tspan>
+					            </text>
+					            <path d="M509.5,69.5 L528.5,69.5" id="Line-10" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path id="Line-10-decoration-1" d="M528.5,69.5 L517.7,66.5 L517.7,72.5 L528.5,69.5 Z" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <rect id="Rectangle" fill="#FFFFFF" x="528" y="170" width="131" height="61"></rect>
+					            <text id="Layout" font-family="Lato-Regular, Lato" font-size="20" font-weight="normal" fill="#000000">
+					                <tspan x="564.11" y="204">Layout</tspan>
+					            </text>
+					            <rect id="Rectangle" fill="#FFFFFF" x="358" y="170" width="131" height="61"></rect>
+					            <text id="Paint" font-family="Lato-Regular, Lato" font-size="20" font-weight="normal" fill="#000000">
+					                <tspan x="399.22" y="204">Paint</tspan>
+					            </text>
+					            <rect id="Rectangle" fill="#FFFFFF" x="171" y="170" width="131" height="61"></rect>
+					            <rect id="Rectangle" fill="#F0F0F0" x="0" y="170" width="131" height="61"></rect>
+					            <text id="Screen" font-family="Lato-Regular, Lato" font-size="20" font-weight="normal" fill="#000000">
+					                <tspan x="34.46" y="206">Screen</tspan>
+					            </text>
+					            <path d="M590.5,101.5 L590.5,171.5" id="Line-11" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path id="Line-11-decoration-1" d="M590.5,171.5 L593.5,160.7 L587.5,160.7 L590.5,171.5 Z" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path d="M129.5,73.5 L169.5,73.5" id="Line" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path id="Line-decoration-1" d="M169.5,73.5 L158.7,70.5 L158.7,76.5 L169.5,73.5 Z" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path d="" id="Line-2" stroke="#979797" stroke-linecap="square"></path>
+					            <path d="M337.5,34.5 L337.5,105.5" id="Line-4" stroke="#FFFFFF" stroke-linecap="square"></path>
+					            <path d="M338.5,34.5 L358.5,34.5" id="Line-5" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path id="Line-5-decoration-1" d="M358.5,34.5 L347.7,31.5 L347.7,37.5 L358.5,34.5 Z" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path d="M337.5,105.5 L358.5,105.5" id="Line-6" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path id="Line-6-decoration-1" d="M358.5,105.5 L347.7,102.5 L347.7,108.5 L358.5,105.5 Z" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <rect id="Rectangle" fill="#FFFFFF" x="171" y="42" width="131" height="61"></rect>
+					            <rect id="Rectangle" fill="#F0F0F0" x="1" y="42" width="131" height="61"></rect>
+					            <path d="M490.5,31.5 L508.5,31.5" id="Line-7" stroke="#FFFFFF" stroke-linecap="square"></path>
+					            <path d="M508.5,32.5 L508.5,107.5" id="Line-8" stroke="#FFFFFF" stroke-linecap="square"></path>
+					            <path d="M489.5,108.5 L508.5,108.5" id="Line-9" stroke="#FFFFFF" stroke-linecap="square"></path>
+					            <path d="M528.5,199.5 L487.5,199.5" id="Line-12" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path id="Line-12-decoration-1" d="M487.5,199.5 L498.3,202.5 L498.3,196.5 L487.5,199.5 Z" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path d="M358.5,199.5 L301.5,199.5" id="Line-12" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path id="Line-12-decoration-1" d="M301.5,199.5 L312.3,202.5 L312.3,196.5 L301.5,199.5 Z" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path d="M168.5,199.5 L130.5,199.5" id="Line-12" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path id="Line-12-decoration-1" d="M130.5,199.5 L141.3,202.5 L141.3,196.5 L130.5,199.5 Z" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <text id="HTML-/-CSS" font-family="Lato-Regular, Lato" font-size="20" font-weight="normal" fill="#000000">
+					                <tspan x="13" y="80">HTML / CSS</tspan>
+					            </text>
+					            <text id="Parser" font-family="Lato-Regular, Lato" font-size="20" font-weight="normal" fill="#000000">
+					                <tspan x="207.43" y="80">Parser</tspan>
+					            </text>
+					            <text id="DOM" font-family="Lato-Regular, Lato" font-size="20" font-weight="normal" fill="#000000">
+					                <tspan x="398.29" y="37">DOM</tspan>
+					            </text>
+					            <text id="Composite" font-family="Lato-Regular, Lato" font-size="20" font-weight="normal" fill="#000000">
+					                <tspan x="189.93" y="206">Composite</tspan>
+					            </text>
+					        </g>
+					    </g>
+					</svg>
+				</section>
+				<section>
+					<?xml version="1.0" encoding="UTF-8"?>
+					<svg width="659px" height="231px" viewBox="0 0 659 231" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+					    <title>Group</title>
+					    <desc>Created with Sketch.</desc>
+					    <defs></defs>
+					    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+					        <g id="Group">
+					            <path d="M301.5,72.5 L336.5,72.5" id="Line-3" stroke="#FFFFFF" stroke-linecap="square"></path>
+					            <rect id="Rectangle" fill="#ED7782" x="358" y="76" width="131" height="61"></rect>
+					            <text id="CSSOM" font-family="Lato-Regular, Lato" font-size="20" font-weight="normal" fill="#000000">
+					                <tspan x="391.37" y="112">CSSOM</tspan>
+					            </text>
+					            <rect id="Rectangle" fill="#B8E986" x="358" y="0" width="131" height="61"></rect>
+					            <rect id="Rectangle" fill="#ED7782" x="528" y="40" width="131" height="61"></rect>
+					            <text id="Render" font-family="Lato-Regular, Lato" font-size="20" font-weight="normal" fill="#000000">
+					                <tspan x="561.9" y="78">Render</tspan>
+					            </text>
+					            <path d="M509.5,69.5 L528.5,69.5" id="Line-10" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path id="Line-10-decoration-1" d="M528.5,69.5 L517.7,66.5 L517.7,72.5 L528.5,69.5 Z" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <rect id="Rectangle" fill="#ED7782" x="528" y="170" width="131" height="61"></rect>
+					            <text id="Layout" font-family="Lato-Regular, Lato" font-size="20" font-weight="normal" fill="#000000">
+					                <tspan x="564.11" y="204">Layout</tspan>
+					            </text>
+					            <rect id="Rectangle" fill="#ED7782" x="358" y="170" width="131" height="61"></rect>
+					            <text id="Paint" font-family="Lato-Regular, Lato" font-size="20" font-weight="normal" fill="#000000">
+					                <tspan x="399.22" y="204">Paint</tspan>
+					            </text>
+					            <rect id="Rectangle" fill="#ED7782" x="171" y="170" width="131" height="61"></rect>
+					            <rect id="Rectangle" fill="#F0F0F0" x="0" y="170" width="131" height="61"></rect>
+					            <text id="Screen" font-family="Lato-Regular, Lato" font-size="20" font-weight="normal" fill="#000000">
+					                <tspan x="34.46" y="206">Screen</tspan>
+					            </text>
+					            <path d="M590.5,101.5 L590.5,171.5" id="Line-11" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path id="Line-11-decoration-1" d="M590.5,171.5 L593.5,160.7 L587.5,160.7 L590.5,171.5 Z" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path d="M129.5,73.5 L169.5,73.5" id="Line" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path id="Line-decoration-1" d="M169.5,73.5 L158.7,70.5 L158.7,76.5 L169.5,73.5 Z" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path d="" id="Line-2" stroke="#979797" stroke-linecap="square"></path>
+					            <path d="M337.5,34.5 L337.5,105.5" id="Line-4" stroke="#FFFFFF" stroke-linecap="square"></path>
+					            <path d="M338.5,34.5 L358.5,34.5" id="Line-5" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path id="Line-5-decoration-1" d="M358.5,34.5 L347.7,31.5 L347.7,37.5 L358.5,34.5 Z" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path d="M337.5,105.5 L358.5,105.5" id="Line-6" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path id="Line-6-decoration-1" d="M358.5,105.5 L347.7,102.5 L347.7,108.5 L358.5,105.5 Z" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <rect id="Rectangle" fill="#ED7782" x="171" y="42" width="131" height="61"></rect>
+					            <rect id="Rectangle" fill="#F0F0F0" x="1" y="42" width="131" height="61"></rect>
+					            <path d="M490.5,31.5 L508.5,31.5" id="Line-7" stroke="#FFFFFF" stroke-linecap="square"></path>
+					            <path d="M508.5,32.5 L508.5,107.5" id="Line-8" stroke="#FFFFFF" stroke-linecap="square"></path>
+					            <path d="M489.5,108.5 L508.5,108.5" id="Line-9" stroke="#FFFFFF" stroke-linecap="square"></path>
+					            <path d="M528.5,199.5 L487.5,199.5" id="Line-12" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path id="Line-12-decoration-1" d="M487.5,199.5 L498.3,202.5 L498.3,196.5 L487.5,199.5 Z" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path d="M358.5,199.5 L301.5,199.5" id="Line-12" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path id="Line-12-decoration-1" d="M301.5,199.5 L312.3,202.5 L312.3,196.5 L301.5,199.5 Z" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path d="M168.5,199.5 L130.5,199.5" id="Line-12" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path id="Line-12-decoration-1" d="M130.5,199.5 L141.3,202.5 L141.3,196.5 L130.5,199.5 Z" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <text id="HTML-/-CSS" font-family="Lato-Regular, Lato" font-size="20" font-weight="normal" fill="#000000">
+					                <tspan x="13" y="80">HTML / CSS</tspan>
+					            </text>
+					            <text id="Parser" font-family="Lato-Regular, Lato" font-size="20" font-weight="normal" fill="#000000">
+					                <tspan x="207.43" y="80">Parser</tspan>
+					            </text>
+					            <text id="DOM" font-family="Lato-Regular, Lato" font-size="20" font-weight="normal" fill="#000000">
+					                <tspan x="398.29" y="37">DOM</tspan>
+					            </text>
+					            <text id="Composite" font-family="Lato-Regular, Lato" font-size="20" font-weight="normal" fill="#000000">
+					                <tspan x="189.93" y="206">Composite</tspan>
+					            </text>
+					        </g>
+					    </g>
+					</svg>
 				</section>
 				<section>
 					<h1 class="screamer strong">CSS Houdini</h1>
 					<p class="sub-screamer">Collection of <span class="emphasis">browser APIs</span> that allows you to gain access to the <span class="emphasis">browsers CSS engine</span>.</p>
-					<div class="grid-elements">
-						<div>Paint</div>
-						<div>Typed OM</div>
-						<div>Properties & values</div>
-						<div>Animation</div>
-						<div>Layout</div>
-						<div>Parser</div>
-						<div>Font Metrics</div>
-						<div>✨ ✨ ✨</div>
+					<div style="padding-top: 48px;">
+					<?xml version="1.0" encoding="UTF-8"?>
+					<svg width="659px" height="231px" viewBox="0 0 659 231" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+					    <title>Group</title>
+					    <desc>Created with Sketch.</desc>
+					    <defs></defs>
+					    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+					        <g id="Group">
+					            <path d="M301.5,72.5 L336.5,72.5" id="Line-3" stroke="#FFFFFF" stroke-linecap="square"></path>
+					            <rect id="Rectangle" fill="#B8E986" x="358" y="76" width="131" height="61"></rect>
+					            <text id="CSSOM" font-family="Lato-Regular, Lato" font-size="20" font-weight="normal" fill="#000000">
+					                <tspan x="391.37" y="112">CSSOM</tspan>
+					            </text>
+					            <rect id="Rectangle" fill="#B8E986" x="358" y="0" width="131" height="61"></rect>
+					            <rect id="Rectangle" fill="#B8E986" x="528" y="40" width="131" height="61"></rect>
+					            <text id="Render" font-family="Lato-Regular, Lato" font-size="20" font-weight="normal" fill="#000000">
+					                <tspan x="561.9" y="78">Render</tspan>
+					            </text>
+					            <path d="M509.5,69.5 L528.5,69.5" id="Line-10" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path id="Line-10-decoration-1" d="M528.5,69.5 L517.7,66.5 L517.7,72.5 L528.5,69.5 Z" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <rect id="Rectangle" fill="#B8E986" x="528" y="170" width="131" height="61"></rect>
+					            <text id="Layout" font-family="Lato-Regular, Lato" font-size="20" font-weight="normal" fill="#000000">
+					                <tspan x="564.11" y="204">Layout</tspan>
+					            </text>
+					            <rect id="Rectangle" fill="#B8E986" x="358" y="170" width="131" height="61"></rect>
+					            <text id="Paint" font-family="Lato-Regular, Lato" font-size="20" font-weight="normal" fill="#000000">
+					                <tspan x="399.22" y="204">Paint</tspan>
+					            </text>
+					            <rect id="Rectangle" fill="#B8E986" x="171" y="170" width="131" height="61"></rect>
+					            <rect id="Rectangle" fill="#F0F0F0" x="0" y="170" width="131" height="61"></rect>
+					            <text id="Screen" font-family="Lato-Regular, Lato" font-size="20" font-weight="normal" fill="#000000">
+					                <tspan x="34.46" y="206">Screen</tspan>
+					            </text>
+					            <path d="M590.5,101.5 L590.5,171.5" id="Line-11" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path id="Line-11-decoration-1" d="M590.5,171.5 L593.5,160.7 L587.5,160.7 L590.5,171.5 Z" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path d="M129.5,73.5 L169.5,73.5" id="Line" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path id="Line-decoration-1" d="M169.5,73.5 L158.7,70.5 L158.7,76.5 L169.5,73.5 Z" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path d="" id="Line-2" stroke="#979797" stroke-linecap="square"></path>
+					            <path d="M337.5,34.5 L337.5,105.5" id="Line-4" stroke="#FFFFFF" stroke-linecap="square"></path>
+					            <path d="M338.5,34.5 L358.5,34.5" id="Line-5" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path id="Line-5-decoration-1" d="M358.5,34.5 L347.7,31.5 L347.7,37.5 L358.5,34.5 Z" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path d="M337.5,105.5 L358.5,105.5" id="Line-6" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path id="Line-6-decoration-1" d="M358.5,105.5 L347.7,102.5 L347.7,108.5 L358.5,105.5 Z" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <rect id="Rectangle" fill="#B8E986" x="171" y="42" width="131" height="61"></rect>
+					            <rect id="Rectangle" fill="#F0F0F0" x="1" y="42" width="131" height="61"></rect>
+					            <path d="M490.5,31.5 L508.5,31.5" id="Line-7" stroke="#FFFFFF" stroke-linecap="square"></path>
+					            <path d="M508.5,32.5 L508.5,107.5" id="Line-8" stroke="#FFFFFF" stroke-linecap="square"></path>
+					            <path d="M489.5,108.5 L508.5,108.5" id="Line-9" stroke="#FFFFFF" stroke-linecap="square"></path>
+					            <path d="M528.5,199.5 L487.5,199.5" id="Line-12" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path id="Line-12-decoration-1" d="M487.5,199.5 L498.3,202.5 L498.3,196.5 L487.5,199.5 Z" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path d="M358.5,199.5 L301.5,199.5" id="Line-12" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path id="Line-12-decoration-1" d="M301.5,199.5 L312.3,202.5 L312.3,196.5 L301.5,199.5 Z" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path d="M168.5,199.5 L130.5,199.5" id="Line-12" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <path id="Line-12-decoration-1" d="M130.5,199.5 L141.3,202.5 L141.3,196.5 L130.5,199.5 Z" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="square"></path>
+					            <text id="HTML-/-CSS" font-family="Lato-Regular, Lato" font-size="20" font-weight="normal" fill="#000000">
+					                <tspan x="13" y="80">HTML / CSS</tspan>
+					            </text>
+					            <text id="Parser" font-family="Lato-Regular, Lato" font-size="20" font-weight="normal" fill="#000000">
+					                <tspan x="207.43" y="80">Parser</tspan>
+					            </text>
+					            <text id="DOM" font-family="Lato-Regular, Lato" font-size="20" font-weight="normal" fill="#000000">
+					                <tspan x="398.29" y="37">DOM</tspan>
+					            </text>
+					            <text id="Composite" font-family="Lato-Regular, Lato" font-size="20" font-weight="normal" fill="#000000">
+					                <tspan x="189.93" y="206">Composite</tspan>
+					            </text>
+					        </g>
+					    </g>
+					</svg>
 					</div>
 				</section>
 				<section>
@@ -395,8 +598,8 @@ let now = performance.now()
 					<h1 class="screamer strong">🐰🎩</h1>
 					<h2 class="screamer strong">#3 Paint API 🎨</h2>
 				</section>
-				<section data-state="the-annoy">
-					<img src="houdini-cycle.png" class="responsive-img" />
+				<section>
+						<h1 class="screamer strong" data-fragment-index="1">Lets talk about worklets!</h1>
 				</section>
 				<section data-state="bg-image">
 					<img src="process.png" class="responsive-img" />
