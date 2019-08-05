@@ -213,3 +213,7 @@ html.conic-gradient body {
 html.tympanus body {
   background: #fb887c;
 }
+
+html.codepen body {
+  background: black;
+}
