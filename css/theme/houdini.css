@@ -42,6 +42,10 @@ body {
   grid-gap: 10px;
 }
 
+.grid-elements .active {
+  background-color: cornflowerblue;
+}
+
 .grid-elements div {
   background: #000;
   font-size: 2rem;
@@ -56,6 +60,10 @@ html.the-rant body {
 html.the-annoy body {
   --houdini-slides: #fff;
   --slide-text-color: #000;
+}
+
+html.vintage body {
+  --houdini-slides: #f6f0e9;
 }
 
 html.conic-gradient body {
@@ -98,7 +106,8 @@ html.conic-gradient body {
   left: 250px;
 }
 
-ul {
+ul,
+ol {
   display: inline-block;
   text-align: left;
   margin: 0 0 0 1em;

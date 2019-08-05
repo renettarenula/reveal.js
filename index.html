@@ -29,6 +29,22 @@
 					<h1 class="screamer">🐰🎩</h1>
 					<p class="sub-screamer">CSS Houdini: The Magic of Properties, Values, & the Paint API ✨ </p>
 				</section>
+				<section data-state="vintage">
+					<img src="houdini.jpg" class="responsive-img" />
+				</section>
+				<section>
+					<h1 class="screamer strong">What new CSS features?</h1>
+					<p class="sub-screamer light">It's a waiting game...</p>
+				</section>
+				<section>
+					<h1 class="screamer">The Stages of CSS Specs</h1>
+					<ol>
+						<li>Working Draft (WD)</li>
+						<li>Candidate Recommendation (CR)</li>
+						<li>Proposed Recommendation</li>
+						<li>W3C Recommendation (REC)</li>
+					</ol>
+				</section>
 				<section>
 					<?xml version="1.0" encoding="UTF-8"?>
 					<svg width="659px" height="231px" viewBox="0 0 659 231" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -172,9 +188,7 @@
 					</svg>
 				</section>
 				<section>
-					<h1 class="screamer strong">CSS Houdini</h1>
-					<p class="sub-screamer">Collection of <span class="emphasis">browser APIs</span> that allows you to gain access to the <span class="emphasis">browsers CSS engine</span>.</p>
-					<div style="padding-top: 48px;">
+
 					<?xml version="1.0" encoding="UTF-8"?>
 					<svg width="659px" height="231px" viewBox="0 0 659 231" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 					    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
@@ -244,6 +258,34 @@
 					        </g>
 					    </g>
 					</svg>
+
+				</section>
+				<section>
+					<h1 class="screamer strong">CSS Houdini</h1>
+					<p class="sub-screamer">Collection of <span class="emphasis">browser APIs</span> that allows you to gain access to the <span class="emphasis">browsers CSS engine</span>.</p>
+					<div class="grid-elements">
+						<div>Paint</div>
+						<div>Typed OM</div>
+						<div>Properties & values</div>
+						<div>Animation</div>
+						<div>Layout</div>
+						<div>Parser</div>
+						<div>Font Metrics</div>
+						<div>✨ ✨ ✨</div>
+					</div>
+				</section>
+				<section>
+					<h1 class="screamer strong">CSS Houdini</h1>
+					<p class="sub-screamer">Collection of <span class="emphasis">browser APIs</span> that allows you to gain access to the <span class="emphasis">browsers CSS engine</span>.</p>
+					<div class="grid-elements">
+						<div class="active">Paint</div>
+						<div class="active">Typed OM</div>
+						<div class="active">Properties & values</div>
+						<div>Animation</div>
+						<div>Layout</div>
+						<div>Parser</div>
+						<div>Font Metrics</div>
+						<div>✨ ✨ ✨</div>
 					</div>
 				</section>
 				<section>
@@ -272,10 +314,10 @@
 					<h1 class="screamer">Why pure CSS when I have SVG/Image/etc?</h1>
 				</section>
 				<section data-state="the-rant">
-					<h1 class="screamer">Why CSS variables when I have SASS variables?</h1>
+					<h1 class="screamer">Why even CSS Grid? I don't want to write 2 layouts!</h1>
 				</section>
 				<section data-state="the-rant">
-					<h1 class="screamer">Why CSS Grid when browser support sucks?</h1>
+					<h1 class="screamer">Why CSS variables when I have SASS variables?</h1>
 				</section>
 				<section>
 					<h1 class="screamer">Because it is all about...</h1>
@@ -323,6 +365,9 @@
 
   transition-property: --start, --end;
   transition-duration: 1s;
+}
+
+.swatch-houdini:hover {
 }
 
 .wrapper {
@@ -601,9 +646,41 @@ let now = performance.now()
 				<section>
 						<h1 class="screamer strong" data-fragment-index="1">Lets talk about worklets!</h1>
 				</section>
-				<section data-state="bg-image">
-					<img src="process.png" class="responsive-img" />
+				<section>
+					<ul>
+						<li class="fragment" data-fragment-index="0">Similar to Web Workers</li>
+						<li class="fragment" data-fragment-index="1">No access to global scope items (no setTimouts)</li>
+						<li class="fragment" data-fragment-index="2">Only works over HTTPS or localhost</li>
+					</ul>
 				</section>
+				<section>
+					<h1 class="screamer">Draw on a canvas that can be used on background images</h1>
+				</section>
+					<section data-state="the-demo">
+						<h1 class="sub-screamer light">Create Worklet</h1>
+						<pre><code class="liveCoding js" data-livecoding-id="no-id" contenteditable>registerPaint('feature', class {
+  paint(ctx, geom, properties) {}
+})
+</code></pre>
+					</section>
+					<section data-state="the-demo">
+						<h1 class="sub-screamer light">Add Worklet to HTML</h1>
+						<pre><code class="liveCoding js" data-livecoding-id="no-id" contenteditable>CSS.paintWorklet.addModule('paint.js')
+</code></pre>
+					</section>
+					<section data-state="the-demo">
+						<h1 class="sub-screamer light">Use Worklet in CSS</h1>
+						<pre><code class="liveCoding css" data-livecoding-id="no-id" contenteditable>.bg {
+  background: paint('feature')
+}
+</code></pre>
+					</section>
+					<section data-state="the-demo">
+						<h1 class="screamer strong">Conic Gradients</h1>
+					</section>
+					<section data-state="the-demo">
+						<img src="caniuse.png" class="responsive-img" />
+					</section>
 			</div>
 		</div>
 
