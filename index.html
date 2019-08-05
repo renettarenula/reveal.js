@@ -658,28 +658,62 @@ let now = performance.now()
 				</section>
 					<section data-state="the-demo">
 						<h1 class="sub-screamer light">Create Worklet</h1>
-						<pre><code class="liveCoding js" data-livecoding-id="no-id" contenteditable>registerPaint('feature', class {
+						<pre><code class="js" contenteditable>registerPaint('feature', class {
   paint(ctx, geom, properties) {}
 })
 </code></pre>
 					</section>
 					<section data-state="the-demo">
 						<h1 class="sub-screamer light">Add Worklet to HTML</h1>
-						<pre><code class="liveCoding js" data-livecoding-id="no-id" contenteditable>CSS.paintWorklet.addModule('paint.js')
+						<pre><code class="js" contenteditable>CSS.paintWorklet.addModule('paint.js')
 </code></pre>
 					</section>
 					<section data-state="the-demo">
 						<h1 class="sub-screamer light">Use Worklet in CSS</h1>
-						<pre><code class="liveCoding css" data-livecoding-id="no-id" contenteditable>.bg {
+						<pre><code class="css" contenteditable>.bg {
   background: paint('feature')
 }
 </code></pre>
 					</section>
-					<section data-state="the-demo">
+					<section>
 						<h1 class="screamer strong">Conic Gradients</h1>
+						<p class="sub-screamer light">Classic example of <strong>polyfilling</strong> CSS</p>
 					</section>
+					<section data-state="conic-gradient">
+						<pre><code class="css" contenteditable>.bg {
+  background: conic-gradient(yellowgreen 40%, gold 0 70%, #f06 0);
+}
+</code></pre>
+</section>
 					<section data-state="the-demo">
 						<img src="caniuse.png" class="responsive-img" />
+					</section>
+					<section data-state="the-annoy">
+						<h1 class="sub-screamer light">https://leaverou.github.io/conic-gradient/</h1>
+						<img src="conic.png" class="responsive-img" />
+					</section>
+					<section>
+						<h1 class="screamer">Let's create an interesting checkbox!</h1>
+					</section>
+					<section>
+						<!-- Copy and Paste Me -->
+						<div class="glitch-embed-wrap" style="height: 600px; width: 100%;">
+						  <iframe
+						    src="https://glitch.com/embed/#!/embed/humble-icicle?path=&previewSize=100&attributionHidden=true"
+						    title="undefined on Glitch"
+						    allow="geolocation; microphone; camera; midi; vr; encrypted-media"
+						    style="height: 100%; width: 100%; border: 0;">
+						  </iframe>
+						</div>
+					</section>
+					<section data-state="tympanus">
+						<h1 class="sub-screamer light">Done in SVG and animated through Javascript</h1>
+						<div style="height: 400px; width: 100%;">
+							<iframe
+								src="https://tympanus.net/Development/AnimatedCheckboxes/"
+								style="height: 100%; width: 100%; border: 0;">
+							</iframe>
+						</div>
 					</section>
 			</div>
 		</div>

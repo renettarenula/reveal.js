@@ -31,7 +31,7 @@ body {
   color: #000;
 }
 
-.strong {
+.strong, strong {
   font-weight: bold;
 }
 
@@ -204,4 +204,12 @@ html.bg-image div.slides {
 
 html.bg-image body {
   --houdini-slides: #fff;
+}
+
+html.conic-gradient body {
+  background: conic-gradient(yellowgreen 40%, gold 0 70%, #f06 0);
+}
+
+html.tympanus body {
+  background: #fb887c;
 }
