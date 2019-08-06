@@ -22,7 +22,7 @@
 			};
 			this.contentWindow.postMessage(msg, '*');
 		};
-		mainframe.setAttribute('src', 'plugin/livecode/mainframe.html');
+		mainframe.setAttribute('src', 'plugin/livecoding/mainframe.html');
 		for(var i = 0; i < el.classList.length; i++) {
 			if(el.classList[i] !== 'livecode') {
 				mainframe.classList.add(el.classList[i]);
